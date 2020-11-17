@@ -10,6 +10,7 @@ import BigNav from './BigNav'
 import useMediaQuery from '@material-ui/core/useMediaQuery'
 import longbridge from '../images/longbridge.jpg'
 import Paper from '@material-ui/core/Paper';
+import headPic from '../images/lnkdin.jpg';
 
 
 const useStyles = makeStyles(theme=>({
@@ -55,8 +56,8 @@ const Header = (props) =>{
 
                     </IconButton>    
                 
-                <Typography noWrap = "true" variant="h5" xs={12} sm={10} className={classes.typographyStyles}>
-                    Al Machado
+                <Typography  noWrap = "true" variant="h5" xs={12} sm={10} className={classes.typographyStyles}>
+                    Al Machado test
 
                 </Typography>
                 {renderNav(matches, props)}
