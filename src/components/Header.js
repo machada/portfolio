@@ -57,7 +57,7 @@ const Header = (props) =>{
                     </IconButton>    
                 
                 <Typography  noWrap = "true" variant="h5" xs={12} sm={10} className={classes.typographyStyles}>
-                    Al Machado ****Under Construction****
+                    Al Machado 
 
                 </Typography>
                 {renderNav(matches, props)}
