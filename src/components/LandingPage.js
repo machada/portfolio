@@ -3,6 +3,8 @@ import {Typography} from "@material-ui/core";
 import {createMuiTheme, responsiveFontSizes,MuiThemeProvider} from "@material-ui/core";
 import longbridge from '../images/longbridge.jpg'
 import Paper from '@material-ui/core/Paper';
+import MouseTrap from "./MouseTrap";
+import ReactPlayer from "react-player";
 
 
 let theme = createMuiTheme();
@@ -32,6 +34,10 @@ export default class LandingPage extends Component {
           <Typography variant="h5" color="black" gutterBottom>
             {line3}
           </Typography>
+          <MouseTrap
+            controls="true"
+            playing="true"
+            url="https://youtu.be/p29JUpsOSTE"></MouseTrap>
           
           </MuiThemeProvider>
         )

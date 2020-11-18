@@ -11,6 +11,8 @@ import green from "@material-ui/core/colors/green";
 import yellow from "@material-ui/core/colors/yellow";
 import longbridge from './images/lnkdin.jpg';
 import Paper from '@material-ui/core/Paper';
+import headPic from './images/lnkdin.jpg';
+import ReactPlayer from "react-player";
 
 const theme = createMuiTheme({
   palette: {
@@ -71,11 +73,13 @@ selectPage = (selection) => {
           />
     
 
+
         </Grid>
         
           </Grid>
         </Grid>
-      
+
+    
     </ThemeProvider>
     )
   };

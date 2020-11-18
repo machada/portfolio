@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Content from './Content'
 import LandingPage from './LandingPage'
+import ContactTable from './ContactTable'
 
 
 export default class PageRouting extends Component {
@@ -47,7 +48,7 @@ export default class PageRouting extends Component {
         case "CONTACT":
             return(
                 <div>
-                    this is CONTACT
+                    <ContactTable/>
                 </div>
             )
         };
