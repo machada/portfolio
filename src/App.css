@@ -87,3 +87,10 @@
 .contact-table{
   padding-top: 10%;
 }
+.centered-title{
+  text-align:center;
+}
+
+.contact-list-item{
+  padding-left: 10px;
+}

@@ -7,10 +7,11 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
+import {Grid} from "@material-ui/core";
 
 const useStyles = makeStyles({
   table: {
-    minWidth: 650,
+    minWidth: 400,
   },
 });
 
@@ -30,18 +31,12 @@ export default function BasicTable() {
   const classes = useStyles();
 
   return (
-      <div className="contact-table">
+      <Grid xs={10}>
+          <h2 className="centered-title" >Lets Talk!</h2>
     <TableContainer component={Paper} >
       <Table className={classes.table} aria-label="simple table">
-        <TableHead>
-          <TableRow>
-            <TableCell>Lets Talk!</TableCell>
-            <TableCell align="right"></TableCell>
-            <TableCell align="right"></TableCell>
-            <TableCell align="right"></TableCell>
-            <TableCell align="right"></TableCell>
-          </TableRow>
-        </TableHead>
+      
+     
         <TableBody>
           {rows.map((row) => (
             <TableRow key={row.name}>
@@ -57,6 +52,6 @@ export default function BasicTable() {
         </TableBody>
       </Table>
     </TableContainer>
-    </div>
+    </Grid>
   );
 }
