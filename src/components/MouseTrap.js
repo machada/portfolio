@@ -3,6 +3,8 @@ import {AppBar, Toolbar, Typography, IconButton, Button} from "@material-ui/core
 import ReactPlayer from "react-player";
 import {Grid} from "@material-ui/core";
 
+
+
 import App from "../App";
 
 
@@ -11,7 +13,16 @@ const MouseTrap = (props) =>{
         
 
 
-        <Grid item sm={12}>
+        <Grid item sm={12} md={7}className="video-player">
+        <Typography variant="h5" >
+            "2014 - Python Open CV Arduino Motion Activated Mouse Trap"
+        </Typography>
+        <Typography>
+            "A fun endeavor that used a laptop with a webcam to detect motion using Python's OpenCV library. 
+            When motion was detected, it would actuate an electric motor that deployed a spring-loaded trap. 
+            "
+        </Typography>
+        
         <ReactPlayer
             style={{zIndex:60}}
            
