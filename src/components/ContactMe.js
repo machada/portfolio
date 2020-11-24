@@ -13,6 +13,10 @@ import phonepic from '../images/phonepic.png';
 import linkedinpic from '../images/linkedinpic.png';
 import youtubepic from '../images/youtubepic.png';
 import Avatar from '@material-ui/core/Avatar';
+import Box from '@material-ui/core/Box';
+import Button from '@material-ui/core/Button';
+import Tooltip from '@material-ui/core/Tooltip';
+
 
 
 
@@ -36,6 +40,9 @@ export default function ContactMe() {
     <div className={classes.root}>
 
       <img src={headPic}/>
+      <Box className="landing-container" borderTop={1}>
+      </Box>
+
       <List component="nav" aria-label="main mailbox folders">
 
 
@@ -43,33 +50,27 @@ export default function ContactMe() {
 
 
 
-        <ListItem button >
-        <ListItemLink href="mailto:allan.machado2011@gmail.com">
+
+
+        <Box>
+        <Button href="mailto:allan.machado2011@gmail.com">
           <img src={emailpic}/>
-          <ListItemText className="contact-list-item" primary="allan.machado2011@gmail.com" />
-          </ListItemLink>
-        </ListItem >
+        </Button>
 
-        <ListItem  href="978-590-0298">
-          <img src={phonepic}/>
-          <ListItemText className="contact-list-item" primary="978-590-0298" />
-        </ListItem >
-
-        <ListItem button >
-            <ListItemLink href="http://www.linkedin.com/in/allan-machado-lowell">
-                <img src={linkedinpic}/>
-            </ListItemLink>
-        </ListItem >
-
-        <ListItem button >
-        <ListItemLink href="https://www.youtube.com/user/allanmachado2011">
-          <img src={youtubepic}/>
-          </ListItemLink>
-        
-        </ListItem >
+        <Tooltip title="978-590-0298" >
+        <Button>
+          <img src={phonepic} href="978-590-0298"/>
+        </Button>
+        </Tooltip>
+        <Button href="http://www.linkedin.com/in/allan-machado-lowell">
+          <img src={linkedinpic}/>
+        </Button>
+        <Button href="https://www.youtube.com/user/allanmachado2011">
+         <img src={youtubepic}/>
+        </Button>
 
 
-
+        </Box>
 
 
        

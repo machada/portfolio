@@ -4,6 +4,7 @@ import LandingPage from './LandingPage'
 import ContactTable from './ContactTable'
 import ContactMe from './ContactMe'
 import MouseTrap from './MouseTrap'
+import Resume from './Resume'
 
 
 export default class PageRouting extends Component {
@@ -42,7 +43,9 @@ export default class PageRouting extends Component {
         case "RESUME":
             return(
                 <div>
-                    this is RESUME
+                    <Resume
+                    
+                    />
                 </div>
             )
         case "PIZZA":
