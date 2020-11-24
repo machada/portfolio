@@ -3,6 +3,7 @@ import Content from './Content'
 import LandingPage from './LandingPage'
 import ContactTable from './ContactTable'
 import ContactMe from './ContactMe'
+import MouseTrap from './MouseTrap'
 
 
 export default class PageRouting extends Component {
@@ -25,13 +26,17 @@ export default class PageRouting extends Component {
         case "HOME":
             return (
                 <div>
-                    <LandingPage/>
+                    <LandingPage
+                        selectPage={this.props.selectPage}
+                    />
                 </div>
             )
         case "PROJECTS":
             return(
                 <div>
-                    <Content/>
+                    <Content
+                        selectPage={this.props.selectPage}
+                    />
                 </div>
             )
         case "RESUME":
@@ -51,6 +56,15 @@ export default class PageRouting extends Component {
                 <div>
                   
                     <ContactMe/>
+                </div>
+            )
+        case "MOUSE":
+            return(
+                <div>
+                    
+                    <MouseTrap
+                        
+                    />
                 </div>
             )
         };

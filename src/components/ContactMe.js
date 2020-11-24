@@ -7,11 +7,12 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Divider from '@material-ui/core/Divider';
 import InboxIcon from '@material-ui/icons/Inbox';
 import DraftsIcon from '@material-ui/icons/Drafts';
-import headPic from '../images/lnkdin.jpg';
+import headPic from '../images/linkedinellipse1.png';
 import emailpic from '../images/emailpic.png';
 import phonepic from '../images/phonepic.png';
 import linkedinpic from '../images/linkedinpic.png';
 import youtubepic from '../images/youtubepic.png';
+import Avatar from '@material-ui/core/Avatar';
 
 
 
@@ -20,6 +21,7 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
     maxWidth: 360,
     backgroundColor: theme.palette.background.paper,
+    paddingLeft: '16px',
   },
 }));
 
@@ -32,7 +34,15 @@ export default function ContactMe() {
 
   return (
     <div className={classes.root}>
+
+      <img src={headPic}/>
       <List component="nav" aria-label="main mailbox folders">
+
+
+     
+
+
+
         <ListItem button >
         <ListItemLink href="mailto:allan.machado2011@gmail.com">
           <img src={emailpic}/>

@@ -70,6 +70,7 @@ selectPage = (selection) => {
         <Grid item xs={10} sm={8} className="Landing-Page">
           <PageRouting
             selectedPage= {this.state.currentPage}
+            selectPage = {this.selectPage}
           />
     
 

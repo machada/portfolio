@@ -94,3 +94,12 @@
 .contact-list-item{
   padding-left: 10px;
 }
+.landing-container{
+  padding-left: 0px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.video-caption{
+  padding-bottom: 25px;
+}

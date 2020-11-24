@@ -5,6 +5,10 @@ import longbridge from '../images/longbridge.jpg'
 import Paper from '@material-ui/core/Paper';
 import MouseTrap from "./MouseTrap";
 import ReactPlayer from "react-player";
+import Button from '@material-ui/core/Button';
+import Container from '@material-ui/core/Container';
+import Box from '@material-ui/core/Box';
+
 
 
 let theme = createMuiTheme();
@@ -19,7 +23,18 @@ const styles = {
   }
 };
 
+
+
 export default class LandingPage extends Component {
+
+
+  handleClick = (route) =>{
+    console.log("handling click");
+    console.log(this.props.selectPage(route));
+  };
+
+
+
     render() {
        
         return (
@@ -34,10 +49,22 @@ export default class LandingPage extends Component {
           <Typography variant="h5" color="black" gutterBottom>
             {line3}
           </Typography>
-          <MouseTrap
+
+          <Box className="landing-container" borderTop={1}>
+          </Box>
+          <Typography variant ="h6" noWrap gutterBottom >
+            Check out some of my: <Button variant="contained" style={{fontWeight:'600'}} color="secondary" onClick={()=>{this.handleClick("PROJECTS")}}>projects</Button>
+          
+          </Typography>
+          <Typography variant ="h6" noWrap>
+            Hope to hear from you: <Button variant="contained" style={{fontWeight:'600'}} color="secondary" onClick={()=>{this.handleClick("CONTACT")}}>contact me</Button>
+          
+          </Typography>
+          
+          {/*<MouseTrap
             controls="true"
             playing="true"
-            url="https://youtu.be/p29JUpsOSTE"></MouseTrap>
+          url="https://youtu.be/p29JUpsOSTE"></MouseTrap> */}
           
           </MuiThemeProvider>
         )

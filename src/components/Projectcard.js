@@ -39,7 +39,15 @@ const ProjectCard = (props) =>{
 
     const classes = useStyles();
     const bull = <span className={classes.bullet}>•</span>;
-    const {avatarSrc, title, subtitle, description, imgSrc, body}= props
+    const {avatarSrc, title, subtitle, description, imgSrc, body, clickLabel}= props
+    
+    function handleClick() {
+      
+      let route = props.route
+      props.selectPage(route);
+      
+    }
+
     
     return(
         
@@ -47,15 +55,20 @@ const ProjectCard = (props) =>{
         <Card className={classes.root}>
             
             <CardHeader
+
+            /*
             avatar={
-                <Avatar src={avatarSrc} className={classes.large}/>
+                <Avatar src={avatarSrc} className={classes.small}/>
               
                 }
-                action={
+              */
+
+                /*action={
                     <IconButton aria-label="settings">
                     <MoreVertIcon />
                     </IconButton>
-                }
+                }*/
+
                 title={title}
                 subheader={subtitle}
                 />
@@ -75,7 +88,7 @@ const ProjectCard = (props) =>{
 
         </CardContent>
         <CardActions>
-          <Button size="small">Learn More</Button>
+          <Button size="small" label="hello???" onClick={handleClick}>{clickLabel}</Button>
         </CardActions>
       </Card>
 
