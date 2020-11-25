@@ -52,13 +52,7 @@ export default function SimpleMenu(props) {
         >
       Projects
       </Button>
-      <Button 
-      color='inherit'
-      onClick= {handleClick}
-      label = "RESUME"
-      >
-      Resume
-      </Button>
+    
       <Button 
       color='inherit'
       onClick= {handleClick}

@@ -10,7 +10,10 @@ import resumeCopy from '../images/20201101AlMachadoResume.pdf'
 const Resume = (props) =>{
 
     return(
-        <div a href={resumeCopy}>hello world??? resume </div>
+        < a href={resumeCopy} download="AlMachadoResumeNov2020">
+            hello world? resume 
+
+        </a>
     )
 }
 

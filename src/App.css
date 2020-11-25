@@ -56,7 +56,7 @@
 }
 .Landing-Page{
 
-  text-align:left;
+  text-align:center;
   opacity: 1;
   margin:none;
   padding:0;
@@ -103,4 +103,7 @@
 
 .video-caption{
   padding-bottom: 25px;
+}
+.center-contents{
+  justify-content: "center";
 }
