@@ -7,7 +7,7 @@ const Pizza = () =>{
 
 return(
     <div>
-        <Button href="mailto:allan.machado2011@gmail.com">
+        <Button className = "email_btn" href="mailto:allan.machado2011@gmail.com">
           <img src={emailpic}/>
         </Button>
     </div>
