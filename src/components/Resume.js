@@ -10,10 +10,15 @@ import resumeCopy from '../images/20201101AlMachadoResume.pdf'
 const Resume = (props) =>{
 
     return(
+        <>
         < a href={resumeCopy} download="AlMachadoResumeNov2020">
             hello world? resume 
 
         </a>
+            <Button className = "email_btn" href="mailto:allan.machado2011@gmail.com">
+                <img src={emailpic}/>
+            </Button>
+        </>
     )
 }
 
