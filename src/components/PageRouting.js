@@ -5,6 +5,7 @@ import ContactTable from './ContactTable'
 import ContactMe from './ContactMe'
 import MouseTrap from './MouseTrap'
 import Resume from './Resume'
+import Pizza from './Pizza'
 
 
 export default class PageRouting extends Component {
@@ -51,7 +52,7 @@ export default class PageRouting extends Component {
         case "PIZZA":
             return(
                 <div>
-                    this is PIZZA
+                    <Pizza/>
                 </div>
             )
         case "CONTACT":

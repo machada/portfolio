@@ -15,9 +15,7 @@ const Resume = (props) =>{
             hello world? resume 
 
         </a>
-            <Button className = "email_btn" href="mailto:allan.machado2011@gmail.com">
-                <img src={emailpic}/>
-            </Button>
+    
         </>
     )
 }
